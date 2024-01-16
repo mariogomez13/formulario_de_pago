@@ -2,83 +2,78 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulario Booststrap</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css" />
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css" />
+</head>
 
 <body class="bg-dark">
-    <div class="container bg-white rounded p-5">
-        <form action="">
+  <main class="w-25 container mt-5">
 
-            <div class="row">
-                <div class="col my-3">
-                    <div class="btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-secondary">Left</button>
-                        <button type="button" class="btn btn-secondary">Middle</button>
-                        <button type="button" class="btn btn-secondary">Right</button>
-                    </div>
-                </div>
+    <form class="row bg-white p-5">
 
+      <div class="col-12 d-flex justify-content-between mb-3">
+        <div class="col my-3 d-flex flex-fill">
+          <button type="button" class="btn btn-primary rounded-pill flex-grow-1">
+            <i class="bi bi-credit-card"></i> Credit Card
+          </button>
+          <button type="button" class="btn btn-secondary rounded-pill flex-grow-1">
+            <i class="bi bi-paypal"></i> Paypal
+          </button>
+          <button type="button" class="btn btn-secondary rounded-pill flex-grow-1">
+            <i class="bi bi-bank"></i> Bank
+          </button>
+        </div>
+      </div>
+
+      <div class="col-12 mb-3">
+        <div class="alert alert-success" role="alert">Some text success or error</div>
+      </div>
+
+      <div class="col-12 mb-3">
+        <label for="full-name" class="form-label">Full name (on the card)</label>
+        <input type="email" class="form-control" id="full-name" placeholder="Jason Doe" />
+      </div>
+
+      <div class="col-12 mb-3">
+        <label for="card-number" class="form-label">Card number</label>
+        <div class="input-group mb-2">
+          <input type="email" class="form-control" id="card-number" placeholder="Your card number" />
+          <div class="input-group-prepend">
+            <div class="input-group-text">
+              <i class="bi bi-credit-card"></i>
+              <i class="bi bi-credit-card d-block mx-3"></i>
+              <i class="bi bi-credit-card"></i>
             </div>
-            <div class="row">
-                <div class="col mb-3">
-                    <div class="alert alert-success text-center" role="alert">
-                        This is a success alert—check it out!
-                    </div>
-                </div>
+          </div>
+        </div>
+      </div>
 
-            </div>
-            <div class="row">
-                <div class="col mb-3">
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Email address</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                            placeholder="Enter email">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
+      <!-- Multiple inputs -->
+      <div class="col-8 mb-3">
+        <label for="expiration" class="form-label">Expiration</label>
+        <div class="input-group" id="expiration">
+          <input type="text" aria-label="First name" class="form-control" placeholder="MM" />
+          <input type="text" aria-label="Last name" class="form-control" placeholder="YY" />
+        </div>
+      </div>
 
-                    <label class="sr-only" for="inlineFormInputGroup">Username</label>
-                    <div class="input-group mb-2">
-                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Username">
-                        <div class="input-group-prepend">
-                            <div class="input-group-text"><i class="bi bi-credit-card"></i> <i
-                                    class="bi bi-credit-card d-block mx-1 "></i> <i class="bi bi-credit-card"></i></div>
-                        </div>
+      <div class="col-4 mb-3">
+        <label for="exampleFormControlInput1" class="form-label">
+          CCV <i class="bi bi-question-circle-fill"></i>
+        </label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" />
+      </div>
 
-                    </div>
+      <div class="col-12 d-grid mb-3">
+        <button class="btn btn-primary rounded-pill" type="button">Confirm</button>
+      </div>
+    </form>
+  </main>
 
-                </div>
-                <div class="row">
-                    <div class="col-8">
-                        <div class="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Enter email">
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp" placeholder="Enter email">
-                                
-                        </div>
-                    </div>
-                    <div class="col-4">
-
-                    </div>
-                </div>
-                <div class="row"></div>
-
-        </form>
-    </div>
-
-
-
-
-
-
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js" defer></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 
 </html>
